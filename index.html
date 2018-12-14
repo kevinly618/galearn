@@ -10,6 +10,16 @@
   gtag('js', new Date());
 
   gtag('config', 'UA-89594457-1');
+
+var clientId = ga.getAll()[0].get('clientId');
+ga('send', {
+hitType: 'event',
+eventCategory: 'Client ID',
+eventAction: Set,
+dimension1: clientId
+});
+
+
 </script>
 
 </head>
